@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="pApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="animated flipInX">
+      <div class="navbar navbar-default MenuStyle staticMenu"role="navigation">
+        <div>
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed buttonCanvas" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#/"><img class="logoUes" ng-src="images/LogoUes.png" alt="LogoUes"></a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav canvasMenuUes navText">
+               <li class="alignLiMenu"><a ng-href="#/">Inicio</a></li>
+              <li class="alignLiMenu dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown" style="height: 61px">Quienes Somos</a>
+                <ul class="dropdown-menu">
+                  <li><a ng-href="#/organigrama">Organigrama</a></li>
+                  <li><a ng-href="#/directorio">Directorio</a></li>
+                </ul>
+              </li>
+              <!--PLANEACION-->
+              <li class="alignLiMenu dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown" style="height: 61px">Planeación</a>
+                <ul class="dropdown-menu">
+                  <li><a ng-href="#/">Presupuesto de Ingresos Propios</a></li>
+                  <li><a ng-href="#/">Presupuesto de Egresos</a></li>
+                  <li><a ng-href="#/">Manual para la Programación y Presupuestación</a></li>
+                  <li>
+                    <a ng-href="#/">Programa Operativo Anual</a>
+                    <ul class="dropdown-menu sub-menu">
+                      <li><a ng-href="#/">Manual de Programación</a></li>
+                      <li><a ng-href="#/">Manual de Presupuestación</a></li>
+                    </ul>
+                  </li>
+                    
+                  <li><a ng-href="#/">PDI</a></li>
+                  <li><a ng-href="#/">PMP</a></li>
+                  <li>
+                    <a ng-href="#/">Presupuesto</a>
+                    <ul class="dropdown-menu sub-menu presupuesto">
+                      <li><a ng-href="#/">2013</a></li>
+                      <li><a ng-href="#/">2014</a></li>
+                      <li><a ng-href="#/">2015</a></li>
+                      <li><a ng-href="#/">2016</a></li>
+                    </ul>
+                  </li>
+                  <li><a ng-href="#/">Evaluación de las Metas del POA</a></li>
+                  <li><a ng-href="#/">Evaluación de los Indicadores ETCA</a></li>
+                  <li><a ng-href="#/">Matriz de Desempeño</a></li>
+                  <li><a ng-href="#/">SIP</a></li>
+                  <li><a ng-href="#/">Agenda Estratégica</a></li>
+                  <li><a ng-href="#/estudiosInstitucionales">Estudios  Institucionales</a></li>
+                </ul>
+              </li>
+              <!--NORMATIVIDAD-->
+              <li class="alignLiMenu"><a ng-href="#/normatividad">Normatividad</a></li>
+              <!--ACREDITACION-->
+              <li class="alignLiMenu dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown" style="height: 61px">Acreditación</a>
+              <ul class="dropdown-menu">
+                  <li><a ng-href="#/acreditacion">Organismos Acreditadores</a></li>
+                  <li><a ng-href="#/">Acreditaciones 2015</a></li>
+                  <li><a ng-href="#/">Acreditaciones 2016</a></li>
+                  <li><a ng-href="#/">Acreditaciones 2017</a></li>
+                  <li><a ng-href="#/">Sistema</a></li>
+                </ul>
+              </li>
+              <!--SGC-->
+              <li class="alignLiMenu"><a ng-href="#/sgc">SGC</a></li>
+              <!--ESTADISTICA-->
+              <li class="alignLiMenu"><a ng-href="#/estadistica">Estadistíca</a></li>
+              <!--FONDOS-->
+              <li class="alignLiMenu dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown" style="height: 61px">Fondos</a>
+                <ul class="dropdown-menu">
+                  <li><a ng-href="#/fondosExtraordinarios">Fondos Ext.</a></li>
+                  <li><a ng-href="#/">PIFI</a></li>
+                  <li><a ng-href="#/">PROFOCIE</a></li>
+                  <li><a ng-href="#/">FAM</a></li>
+                </ul>
+              </li>
+              <!--PORTAFOLIO-->
+             <li class="alignLiMenu"><a ng-href="#/">Portafolio</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inner"></div>
+    <div class="">
+    <div ng-view=""></div>
+    </div>
+
+    <div class="footer footerUes">
+      <div class="container">
+        <p class="footerText">Universidad Estatal de Sonora</p>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
