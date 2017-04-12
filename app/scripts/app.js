@@ -33,6 +33,9 @@ angular
       .when('/organigrama',{
         templateUrl: 'views/organigrama.html'
       })
+      .when('/directorio',{
+        templateUrl: 'views/directorio.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

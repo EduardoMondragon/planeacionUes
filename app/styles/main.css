@@ -95,9 +95,29 @@ hr.lineTitle{/*linea para dividir titulos principales de los contenidos*/
     margin-bottom: 0px;
      border: 1px solid transparent; 
 }
+.innerEstasAqui {/*margen nav menu de contenidos de la pag*/
+    margin-bottom: 40px;
+     border: 1px solid transparent; 
+}
 .myContainer{
   margin-left: 60px;
   margin-right: 60px;
+}
+
+div.estasAqui{
+  background-color: black;
+  opacity: 0.8;
+  height: 60px;
+  margin-top: -33px;
+}
+h4.estasAquiTexto{
+  color: white;
+  padding-top: 25px;
+  padding-left: 30px;
+  font-family:Trebuchet MS;
+}
+.estasAquiColor{
+  color: #ecf0f1;  
 }
 /*
 ======================
@@ -126,6 +146,7 @@ hr.lineTitle{/*linea para dividir titulos principales de los contenidos*/
 .MenuStyle{/*nav menú, posicion, color fondo, sin border radius*/
  transition: 0.5s;
  border-radius: 0px;
+ border: 0px solid transparent;
  height: 70px;
  background-color: rgba(93,41,43,.80)!important; 
  border-bottom:none !important;
@@ -241,7 +262,9 @@ hr.lineTitle{/*linea para dividir titulos principales de los contenidos*/
 .dropdown-menu{
   background-color: #5e292a!important;
 }
-
+.box-shadow{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 /*
 ============================
 ============================
@@ -370,10 +393,10 @@ hr.lineTitle{/*linea para dividir titulos principales de los contenidos*/
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(/images/inicio/slide/u1.jpg); 
+  background-image: url(/images/inicio/slide/u3.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818);
+  background-image: url(/images/inicio/slide/u1.jpg);
 }
 .fade-carousel .slides .slide-3 {
   background-image: url(/images/inicio/slide/u3.jpg);
