@@ -95,8 +95,8 @@ hr.lineTitle{/*linea para dividir titulos principales de los contenidos*/
     margin-bottom: 0px;
      border: 1px solid transparent; 
 }
-.innerEstasAqui {/*margen nav menu de contenidos de la pag*/
-    margin-bottom: 40px;
+.innerTopOn {/*margen nav menu de contenidos de la pag*/
+    margin-top: 40px;
      border: 1px solid transparent; 
 }
 .innerBottom{
