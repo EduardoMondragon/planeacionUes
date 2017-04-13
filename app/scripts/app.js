@@ -31,7 +31,9 @@ angular
         controllerAs: 'about'
       })
       .when('/organigrama',{
-        templateUrl: 'views/organigrama.html'
+        templateUrl: 'views/organigrama.html',
+        controller: 'OrganigramaCtrl',
+        controllerAs: 'vm'
       })
       .when('/directorio',{
         templateUrl: 'views/directorio.html'

@@ -123,6 +123,12 @@ h4.estasAquiTexto{
 .estasAquiColor{
   color: #ecf0f1;  
 }
+.visibilityHidden{
+  visibility:hidden;
+}
+.visibilityVisible{
+  visibility: visible;
+}
 /*
 ======================
 ======================
@@ -478,5 +484,13 @@ h4.estasAquiTexto{
 .orgAreaPersonal{
   margin-top: -8px !important;
   color: #2c3e50;
+}
+
+.imgOrgIn{
+  animation-name: flipInY;
+}
+
+.imgOrgOut{
+  animation-name: zoomOut;
 }
 
