@@ -99,6 +99,10 @@ hr.lineTitle{/*linea para dividir titulos principales de los contenidos*/
     margin-bottom: 40px;
      border: 1px solid transparent; 
 }
+.innerBottom{
+  margin-bottom: 40px;
+  border: 1px solid transparent; 
+}
 .myContainer{
   margin-left: 60px;
   margin-right: 60px;
@@ -144,11 +148,10 @@ h4.estasAquiTexto{
 }
 
 .MenuStyle{/*nav menú, posicion, color fondo, sin border radius*/
- transition: 0.5s;
  border-radius: 0px;
  border: 0px solid transparent;
  height: 70px;
- background-color: rgba(93,41,43,.80)!important; 
+ background-color: #5D292B!important;
  border-bottom:none !important;
  border-top: none !important;
 }
@@ -273,7 +276,7 @@ h4.estasAquiTexto{
 ============================
 */
 .footerUes{/*color de fondo y tamaño vertical*/
-  background-color: #5e292a;
+  background-color: #5D292B;
   height: 65px;
 }
 
@@ -284,7 +287,7 @@ h4.estasAquiTexto{
 
 .footer {/* color de la letra, espacio del texto(padding), color del borde top */
   padding-top: 19px;
-  color: #bdc3c7;
+  color:  #d9d9d9;
   border-top: none;
   margin-top: -30px !important;
 }
@@ -431,7 +434,7 @@ h4.estasAquiTexto{
   width: 100%;
   height: 432px;
 }
-
+ 
 @media screen and (max-width: 860px){
   .figure{
     position: relative;
