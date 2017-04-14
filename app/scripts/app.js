@@ -38,6 +38,11 @@ angular
       .when('/directorio',{
         templateUrl: 'views/directorio.html'
       })
+      .when('/sgc',{
+        templateUrl: 'views/sgc.html',
+        controller: 'ScgCtrl',
+        controllerAs: 'vm'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -1,3 +1,25 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background: #24242a;
+}
+.preloader i {
+  color: #fff;
+  position: absolute;
+  font-size: 36px;
+  line-height: 36px;
+  top: 50%;
+  left: 50%;
+  height: 36px;
+  width: 36px;
+  margin-top: -15px;
+  margin-left: -15px;
+  display: inline-block;
+}
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -83,10 +105,7 @@ body {
 ======================
 ======================
 */
-hr.lineTitle{/*linea para dividir titulos principales de los contenidos*/
-  width: 45px;
-  border: 2px solid #f39c12;
-}
+
 .innerInverseTop {/*margen nav menu de contenidos de la pag*/
     margin-top: -100px;
      border: 1px solid transparent; 
@@ -99,7 +118,7 @@ hr.lineTitle{/*linea para dividir titulos principales de los contenidos*/
     margin-top: 40px;
      border: 1px solid transparent; 
 }
-.innerBottom{
+.innerBottomOn{
   margin-bottom: 40px;
   border: 1px solid transparent; 
 }
@@ -417,7 +436,10 @@ h4.estasAquiTexto{
 @media screen and (max-width: 640px){/*Media Queries*/
     .hero h1 { font-size: 4em; }    
 }
-
+hr.lineTitle{/*linea para dividir titulos principales de los contenidos*/
+  width: 45px;
+  border: 2px solid #f39c12;
+}
 
 /*
 ============================
@@ -494,3 +516,99 @@ h4.estasAquiTexto{
   animation-name: zoomOut;
 }
 
+/*
+============================
+============================
+            SGC
+============================
+============================
+*/
+
+.btnSgc{
+  margin-top: -47px;
+  margin-right: 10px;
+  background-color: transparent !important;
+  border-radius: 0px!important; 
+}
+
+.btnSgc:hover{
+  background-color: #f39c12 !important;
+}
+
+@media screen and (max-width: 980px){
+  .btnSgc{
+    margin-top: -47px;
+    margin-right: 5px;
+    background-color: transparent !important; 
+    width: 18%;
+  }
+}
+
+div .banner{
+  background-color: #ecf0f1;
+}
+div.bannerText{
+  border-left: 4px solid rgba(94, 41, 42,.9);
+  padding-left: 10px;
+  margin-left: 10px;
+  text-align: justify;
+}
+p.bannerSubTitle{
+  padding-right: 30px;
+  font: 17px arial;
+}
+.imgProceso{
+  margin-top: 30px;
+}
+.imgProceso:hover{
+  animation-name: pulse;
+}
+@media screen and (max-width:980px){
+  .imgProceso{
+  margin-top: 5px;
+  }
+}
+.sgcImages{
+  box-shadow: 0px 2px 4px 4px lightgrey;
+  border: 6px solid white;
+  width:100%;
+}
+
+.sgcTitleImages{
+  font-family: Lucida Console;
+}
+.sgcTextImages{
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+
+.visibilityVisible{
+  visibility: visible;
+}
+.visibilityHidden{
+  visibility:hidden;
+}
+.inImgVision{
+animation-name: zoomIn;
+}
+.outImgVision{
+  animation-name: zoomOut;
+}
+.inTextVision{
+  animation-name: fadeInLeft;
+}
+.inRightTextVision{
+  animation-name: fadeInRight;
+}
+.outTextVision{
+  animation-name: fadeOut;
+}
+.rowSpace{
+  margin-bottom: 20px;
+}
+hr.lineTitleSgc{/*linea para dividir titulos principales de los contenidos*/
+  width: 45px;
+  border: 2px solid #f39c12;
+  margin-left: -0%;
+}
