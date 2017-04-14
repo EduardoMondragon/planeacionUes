@@ -27,9 +27,22 @@
   padding: 0.2em 0;
 }
 
-body {
-  padding: 0;
+html {
+    position: relative;
+    min-height: 100%;
 }
+
+body {
+    padding: 0;
+    margin: 0 0 60px;
+}
+
+@media screen and (max-width: 940px) {
+  body {
+      padding: 0;
+      margin: 0 0 0px;
+  }
+} 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -88,6 +101,11 @@ body {
   .footer {
     padding-left: 0;
     padding-right: 0;
+   /* just for demo */ 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
   /* Space out the masthead */
   .header {
@@ -148,6 +166,8 @@ h4.estasAquiTexto{
 .visibilityVisible{
   visibility: visible;
 }
+
+
 /*
 ======================
 ======================
@@ -441,6 +461,11 @@ hr.lineTitle{/*linea para dividir titulos principales de los contenidos*/
   border: 2px solid #f39c12;
 }
 
+.planeacionText{
+ margin-bottom: -12px!important; 
+ padding-top: 10px;
+ text-align: justify;
+}
 /*
 ============================
 ============================
@@ -611,4 +636,56 @@ hr.lineTitleSgc{/*linea para dividir titulos principales de los contenidos*/
   width: 45px;
   border: 2px solid #f39c12;
   margin-left: -0%;
+}
+
+/*
+============================
+============================
+        NORMATIVIDAD
+============================
+============================
+*/
+
+.side_norm {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.side_norm a {
+    text-decoration: none;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    color: #5e292a !important;
+    font-size: 16px;
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    height: 60px;
+    display: block;
+}
+
+.side_norm a:hover{
+	color: #faa636 !important;
+}
+.side_norm a:focus{
+  background-color: #2c3e50 !important;
+}
+
+.normEnlace:hover{
+  text-decoration: none;
+}
+
+.normImg1:hover{
+  animation-name: flipInY;
+}
+
+.divBorderRight{
+  border-right: 3px solid #7f8c8d;
+}
+
+@media screen and (max-width:980px){
+  .divBorderRight{
+    border-right: 3px solid transparent;
+  }
 }

@@ -20,7 +20,7 @@ angular
   .config(function ($routeProvider, $locationProvider) {
      $locationProvider.hashPrefix('');
     $routeProvider
-      .when('/', {
+      .when('/', {/*INICIO*/
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
@@ -30,17 +30,22 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/organigrama',{
+      .when('/organigrama',{/*ORGANIGRAMA*/
         templateUrl: 'views/organigrama.html',
         controller: 'OrganigramaCtrl',
         controllerAs: 'vm'
       })
-      .when('/directorio',{
+      .when('/directorio',{/*DIRECTORIO*/
         templateUrl: 'views/directorio.html'
       })
-      .when('/sgc',{
+      .when('/sgc',{/*SGC*/
         templateUrl: 'views/sgc.html',
         controller: 'ScgCtrl',
+        controllerAs: 'vm'
+      })
+      .when('/normatividad',{/*NORMATIVIDAD*/
+        templateUrl: 'views/normatividad.html',
+        controller: 'NormatividadCtrl',
         controllerAs: 'vm'
       })
       .otherwise({
