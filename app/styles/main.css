@@ -585,8 +585,9 @@ p.bannerSubTitle{
 .imgProceso{
   margin-top: 30px;
 }
+
 .imgProceso:hover{
-  animation-name: pulse;
+  animation-name: jello;
 }
 @media screen and (max-width:980px){
   .imgProceso{
@@ -697,3 +698,61 @@ hr.lineTitleSgc{/*linea para dividir titulos principales de los contenidos*/
     border-right: 3px solid transparent;
   }
 }
+
+/*
+============================
+============================
+            LOGIN
+============================
+============================
+*/
+.modalBodyLogin{
+  background: #272125;
+  height: 500px;
+}
+
+.loginTitle{
+  color: white;
+  text-align: center;
+}
+
+.iconLoginInput {
+		font-size: 20px;
+		color: #fff;
+	}
+
+.loginInputSpaceTop{
+  margin-top: 50px;
+}
+.loginInputSpaceBottom{
+  margin-bottom: 10px;
+}
+
+.loginBtnSumitSide{
+  left: -23px!important;
+}
+
+.loginBtnSumit{
+  width: 100%!important;
+  height: 78px;
+  border: 2px solid #c0392b;
+  background-color: #c0392b;
+}
+.loginBtnSumit:hover{
+  background-color: #272125;
+  border: 2px solid white;
+  color: #c0392b;
+}
+
+.loginSumitGlyphicon{
+  left: -12px;
+  top: -1px;
+  font-size: 28px;
+}
+
+.loginAcceder{
+  margin-left: -35px;
+  color: white;
+}
+
+

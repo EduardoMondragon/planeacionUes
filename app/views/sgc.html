@@ -1,8 +1,42 @@
 <div class="estasAqui">
     <h4 class="estasAquiTexto">
         <span id="responsive"><strong class="estasAquiColor">Estas aqui :</strong> Quienes Somos / <span class="ubicacionNavegacion">Sistemas de Gestión de Calidad</span></h4></span>
-		<a ng-href="#/login" class="btn btn-warning btn-lg pull-right btnSgc">Login</a>  
+		<button data-toggle="modal" data-target="#loginModal" class="btn btn-warning btn-lg pull-right btnSgc">Login</button>  
 </div>
+<!--
+==============================
+         Modal Login
+==============================
+-->	
+  <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content modalBodyLogin">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>			
+			  <form class="myContainer text-center">
+				  <h1 class="loginTitle innerBottomOn">Login Planeación Rectoría</h1>
+				  <img src="/images/LogoUes.png" alt="logoUes">
+				<div class="col-xs-11">
+						<div class="input-group loginInputSpaceBottom loginInputSpaceTop">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>	
+							<input class="form-control" type="text" placeholder="User ID" required>
+						</div>
+						<div class="input-group loginInputSpaceBottom">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>	
+							<input class="form-control" type="password" placeholder="Password" required>
+						</div>
+				</div>
+				<div class="col-xs-1 loginInputSpaceTop loginBtnSumitSide">
+					<button type="submit" class="btn btn-danger btn-block btn-lg loginBtnSumit"><span class="glyphicon glyphicon-arrow-right loginSumitGlyphicon"></span><div class="loginAcceder"><strong>Acceder</strong></div></button> 
+				</div>
+			 </form>		
+        </div>
+      </div>  
+    </div>
+  </div>
+
 <!--
 ==============================
             Banner
@@ -19,7 +53,7 @@
 		<center><img src="/images/sgc/proceso.png" class="img-responsive animated imgProceso"></center>
 	</div>
 	<div class="col-xs-6 colXs6Responsive">
-		<img src="/images/sgc/imagen1.png" class="img-responsive"  alt="banner">
+		<img src="/images/sgc/imagen1.png" class="img-responsive animated bounceInDown"  alt="banner">
 	</div>
 </div>
 <div class="myContainer subTitleSpace innerBottomOn">
