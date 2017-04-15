@@ -637,6 +637,14 @@ hr.lineTitleSgc{/*linea para dividir titulos principales de los contenidos*/
   border: 2px solid #f39c12;
   margin-left: -0%;
 }
+@media screen and (max-width:940px ){
+  #responsive{
+    font-size: 14px !important;
+  }
+  .colXs6Responsive{
+    width: 100%;
+  }
+}
 
 /*
 ============================

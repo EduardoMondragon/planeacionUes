@@ -23,7 +23,7 @@ angular.module('pApp')
             if(document.body.scrollTop > 200 || document.documentElement.scrollTop
             > 200){
                 document.getElementById("imgMision").className = "animated inImgVision visibilityVisible sgcImages";
-                document.getElementById("textMision").className = "col-xs-6 animated inRightTextVision visibilityVisible sgcTextImages";
+                document.getElementById("textMision").className = "col-xs-6 animated inRightTextVision visibilityVisible sgcTextImages colXs6Responsive";
                 firstTime = false;
             } else{
                 if(!firstTime){
@@ -39,7 +39,7 @@ angular.module('pApp')
             if(document.body.scrollTop > 550 || document.documentElement.scrollTop
             > 550){
                 document.getElementById("imgVision").className = "animated inImgVision visibilityVisible sgcImages";
-                document.getElementById("textVision").className = "col-xs-6 animated inTextVision visibilityVisible sgcTextImages";
+                document.getElementById("textVision").className = "col-xs-6 animated inTextVision visibilityVisible sgcTextImages colXs6Responsive";
                 firstTime = false;
             } else{
                 if(!firstTime){
@@ -55,7 +55,7 @@ angular.module('pApp')
             if(document.body.scrollTop > 900 || document.documentElement.scrollTop
             > 900){
                 document.getElementById("imgPoliticaDeCalidad").className = "animated inImgVision visibilityVisible sgcImages";
-                document.getElementById("textPoliticaDeCalidad").className = "col-xs-6 animated inRightTextVision visibilityVisible sgcTextImages";
+                document.getElementById("textPoliticaDeCalidad").className = "col-xs-6 animated inRightTextVision visibilityVisible sgcTextImages colXs6Responsive";
                 firstTime = false;
             } else{
                 if(!firstTime){
@@ -71,7 +71,7 @@ angular.module('pApp')
             if(document.body.scrollTop > 1300 || document.documentElement.scrollTop
             > 1300){
                 document.getElementById("imgObjetivosDeCalidad").className = "animated inImgVision visibilityVisible sgcImages";
-                document.getElementById("textObjetivosDeCalidad").className = "col-xs-6 animated inTextVision visibilityVisible sgcTextImages";
+                document.getElementById("textObjetivosDeCalidad").className = "col-xs-6 animated inTextVision visibilityVisible sgcTextImages colXs6Responsive";
                 firstTime = false;
             } else{
                 if(!firstTime){
