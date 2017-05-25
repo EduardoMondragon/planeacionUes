@@ -9,7 +9,6 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -118,10 +117,53 @@
               <!--ESTADISTICA-->
               <li class="alignLiMenu dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown" style="height: 61px">Estadistíca</a>
                   <ul class="dropdown-menu">
-                      <li><a ng-href="#/numeralia">Numeralía</a></li>
-                      <li><a ng-href="#/documentosEstadísticos">Documentos Estadísticos</a></li>
-                      <li><a ng-href="#/seriesEstadisticas">Series Estadísticas</a></li>
-                      <li><a ng-href="#/investigaciónEducativa">Investigación Educativa</a></li>
+                      <li><a ng-href="#/numeralia">Numeralia</a></li>
+                      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Documentos Estadísticos</a>
+                        <ul class="dropdown-menu sub-menu acreditacion">
+                        <li><a ng-href="/pdf/planeacion/estadistica/documentos-estadisticos/Agenda Estadística 2016.pdf" target="_blank">Agenda Estadística 2016</a></li>
+                        <li><a ng-href="/pdf/planeacion/estadistica/documentos-estadisticos/Agenda Estadística 2015.pdf" target="_blank">Agenda Estadística 2015</a></li>
+                        <li><a ng-href="/pdf/planeacion/estadistica/documentos-estadisticos/Agenda Estadística 2014.pdf" target="_blank">Agenda Estadística 2014</a></li>                                                
+                        </ul>
+                      </li>
+                      <li><a ng-href="#/series-estadisticas">Series Estadísticas</a></li>
+                      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Investigación Educativa</a>
+                      <ul class="dropdown-menu sub-menu2 acreditacion">
+                        <li><a>Aspirantes</a>
+                          <ul class="dropdown-menu sub-menu4 acreditacion">
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/aspirantes/Aspirantes2015.pdf" target="_blank">Aspirantes 2015</a></li>
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/aspirantes/Aspirantes2014.pdf" target="_blank">Aspirantes 2014</a></li>
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/aspirantes/Aspirantes2013.pdf" target="_blank">Aspirantes 2013</a></li>                                                
+                          </ul>
+                        </li>
+                        <li><a>Egresados</a>
+                          <ul class="dropdown-menu sub-menu4 inv-egresos">
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/egresados/Egresado2014.pdf" target="_blank">Egresados 2014</a></li>
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/egresados/Egresados2012.pdf" target="_blank">Egresados 2012</a></li>                                                
+                          </ul>
+                        </li>
+                        <li><a>Opinión</a>
+                          <ul class="dropdown-menu sub-menu4 inv-opinion">
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/opinion/Sociedad2014.pdf" target="_blank">Sociedad 2014</a></li>
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/opinion/Sociedad2013.pdf" target="_blank">Sociedad 2013</a></li>
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/opinion/Sociedad2012.pdf" target="_blank">Sociedad 2012</a></li>                                                
+                          </ul>
+                        </li>
+                        <li><a>Satisfacción Docente</a>
+                          <ul class="dropdown-menu sub-menu4 inv-docentes">
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/satisfaccion-docente/Docentes2016.pdf" target="_blank">Docentes 2016</a></li>
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/satisfaccion-docente/Docentes2015.pdf" target="_blank">Docentes 2015</a></li>
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/satisfaccion-docente/Docentes2013.pdf" target="_blank">Docentes 2013</a></li>                                                
+                          </ul>
+                        </li>
+                        <li><a>Satisfacción Estudiantes</a>
+                          <ul class="dropdown-menu sub-menu4 inv-estudiantes">
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/satisfaccion-estudiantes/Estudiantes2016.pdf" target="_blank">Estudiantes 2016</a></li>
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/satisfaccion-estudiantes/Estudiantes2015.pdf" target="_blank">Estudiantes 2015</a></li>
+                          <li><a ng-href="/pdf/planeacion/estadistica/investigacion-educativa/satisfaccion-estudiantes/Estudiantes2013.pdf" target="_blank">Estudiantes 2013</a></li>                                                
+                          </ul>
+                        </li>                                                
+                        </ul>
+                        </li>
                       <li><a ng-href="#/sieues">SIEUES</a></li>
                   </ul>
               </li>

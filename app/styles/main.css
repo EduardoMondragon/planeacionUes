@@ -51,7 +51,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 /* Custom page header */
 .header {
   border-bottom: 1px solid red;
@@ -151,6 +150,14 @@ div.estasAqui{
   height: 60px;
   margin-top: -33px;
 }
+div.estasAqui_estadistica{
+  position: fixed;
+  background-color:#30353d;
+  width: 100%;
+  height: 60px;
+  top: 70px;
+  z-index:1;
+}
 h4.estasAquiTexto{
   color: white;
   padding-top: 25px;
@@ -207,8 +214,9 @@ h4.estasAquiTexto{
   width: 100%;
   margin-right:0px;
 }
+
 .inner {/*margen nav menu de contenidos de la pag*/
-    margin-bottom: 100px;
+   margin-bottom: 100px;
      border: 1px solid transparent; 
 }
 
@@ -251,7 +259,6 @@ h4.estasAquiTexto{
 ===========================
 */
 
-
 .dropdown-menu .sub-menu{
     left: 100%;
     position: absolute;
@@ -260,8 +267,24 @@ h4.estasAquiTexto{
     margin-top: -1px;
     border-radius: 0px; 
 }
+.dropdown-menu .sub-menu2{
+    left: -98.5%;
+    position: absolute;
+    top: 23%;
+    visibility: hidden;
+    margin-top: -1px;
+    border-radius: 0px; 
+}
 .dropdown-menu .sub-menu3{
     left: 100%;
+    position: absolute;
+    top: 23%;
+    visibility: hidden;
+    margin-top: -1px;
+    border-radius: 0px; 
+}
+.dropdown-menu .sub-menu4{
+    left: -74.5%;
     position: absolute;
     top: 23%;
     visibility: hidden;
@@ -277,11 +300,28 @@ h4.estasAquiTexto{
 .egresos{
   top: 48% !important;
 }
-
+.inv-egresos{
+  top: 21% !important;
+}
+.inv-opinion{
+  top: 40% !important;
+}
+.inv-docentes{
+  top: 59% !important;
+}
+.inv-estudiantes{
+  top: 78% !important;
+}
 .dropdown-menu li:hover .sub-menu {
     visibility: visible;
 }
 .sub-menu li:hover .sub-menu3 {
+    visibility: visible;
+}
+.dropdown-menu li:hover .sub-menu2 {
+    visibility: visible;
+}
+.sub-menu2 li:hover .sub-menu4 {
     visibility: visible;
 }
 
@@ -865,9 +905,140 @@ Acreditacion/organismos acreditadores
 .testimonial.testimonial-default .testimonial-writer-name{
     color: #777;
 }
+/*-----estadistica----*/
+.bodylike {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: #BFBFBF;
+  color: #fff;
+}
+#canvas {
+  top: 100px;
+	position: fixed;
+	z-index: -1;
+}
+.border {
+  height: 6px;
+  background-color: #5e292a;
+  width: 70px;
+  margin: 8px auto;
+  margin-bottom: 20px;
+}
 
+.sizepred {
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	padding: 0;
+	width: 110%;
+	color: #5e292a;
+	text-align: center;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,0,0);
+	transform: translate3d(-50%,0,0);
+	font-family: "uni_sansheavy_caps", sans-serif;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.e_numeralia_h1 {
+	color: #5e292a;
+	font-size: 37px;
+  	line-height: 1.2;
+}
 
+.e_numeralia_h2 {
+	color: #5e292a;
+	font-size: 24px;
+  	line-height: 1.2;
+	margin-left: 5px;
+}
+.e_numeralia_h2_2 {
+	color: #5e292a;
+	font-size: 24px;
+  line-height: 1.2;
+	margin-left: 5px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+.e_numeralia_h2_bold {
+	color: #5e292a;
+	font-size: 24px;
+  	line-height: 1.2;
+	font-weight: 600;
+}
+.e_numeralia_h3_bold {
+	color: #7F7F7F;
+	font-size: 17px;
+  	line-height: 1.2;
+	font-weight: 600;
+}
 
- 
-   
+.pull-right {
+	margin-right: 8px;
+}
+.pull-left {
+	margin-left: 8px;
+}
+.e_border_bottom {
+	border-bottom: 1px dashed #5e292a;
+}
+.fixedtop{
+	color: #5e292a;
+	position: fixed;
+	text-align: center;
+	padding-left: 81%;
+	padding-right: 5%;
+	width: 100%;
+	top: 140px;
+    z-index: 1;
+}
+.stad{
+    margin-left: 15px;
+    font-family: Tahoma;
+}
+.excelicon a {
+    text-decoration: none;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.split{
+	width: 45%;
+	display: inline-block;
+	margin: 5px;
+	vertical-align: top;
+	margin-top: 15px;
+}
+.split h4{
+	  width: 100%;
+	  padding: 2px 0px;
+	  background: #5e292a;
+	  font-size: 25px;
+	  color: #fff;
+	  text-align: center;
+	  font-family: "Cibreo", sans-serif;
+}
+.split h5{
+	color: #faa636;
+	font-size: 15px;
+	font-family: "Arial Narrow", sans-serif;
+	text-transform: uppercase;
+}
+.split a{
+	color: #5e292a;
+	font-size: 16px;
+	font-family: "Arial Narrow", sans-serif;
+    font-weight: 600;
+	width: 100%;
+	display: block;	
+}
 
+.split a:hover{
+	color: #faa636;
+}
+@media (min-width: 768px){
+	.marginexcel{
+		margin-top: 50px;
+	}
+}
