@@ -43,6 +43,11 @@ angular
         controller: 'NormatividadCtrl',
         controllerAs: 'vm'
       })
+      .when('/blog',{/*NORMATIVIDAD*/
+        templateUrl: 'views/blog.html',
+        controller: 'BlogCtrl',
+        controllerAs: 'vm'
+      })
       .when('/organismosAcreditadores',{/*organismosAcreditadores*/
         templateUrl: 'views/organismosAcreditadores.html'
       })
