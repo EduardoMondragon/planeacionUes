@@ -21,14 +21,9 @@ angular
      $locationProvider.hashPrefix('');
     $routeProvider
       .when('/', {/*INICIO*/
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+        templateUrl: 'views/inicio.html',
+        controller: 'InicioCtrl',
+        controllerAs: 'vm'
       })
       .when('/organigrama',{/*ORGANIGRAMA*/
         templateUrl: 'views/organigrama.html',
@@ -47,6 +42,9 @@ angular
         templateUrl: 'views/normatividad.html',
         controller: 'NormatividadCtrl',
         controllerAs: 'vm'
+      })
+      .when('/organismosAcreditadores',{/*organismosAcreditadores*/
+        templateUrl: 'views/organismosAcreditadores.html'
       })
       .otherwise({
         redirectTo: '/'

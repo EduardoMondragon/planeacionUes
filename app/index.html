@@ -18,11 +18,9 @@
   </head>
   <body ng-app="pApp">
     <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     <!-- Add your site or application content here -->
-     
     <div>
       <div class="navbar navbar-default MenuStyle staticMenu"role="navigation">
         <div>
@@ -51,38 +49,50 @@
               <!--PLANEACION-->
               <li class="alignLiMenu dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown" style="height: 61px">Planeación</a>
                 <ul class="dropdown-menu">
-                  <li><a ng-href="#/">Programa De Desarrollo Institucional</a></li>
-                  <li><a ng-href="#/">Programa Mediano Plazo</a></li>
+                  <li><a ng-href="/pdf/planeacion/Plan de desarrollo institucional 2014-2019.pdf" target="_blank">Programa de Desarrollo Institucional</a></li>
+                  <li><a ng-href="/pdf/planeacion/Programa Institucional de Medio Plazo 2016-2022.pdf" target="_blank">Programa Mediano Plazo</a></li>
                   <li class="dropdown"><a ng-href="#/">Presupuesto Anual</a>
                     <ul class="dropdown-menu sub-menu acreditacion">
                       <li><a ng-href="#/">Ingresos</a>
                           <ul class="dropdown-menu sub-menu3 acreditacion">
-                            <li><a ng-href="#/">2013</a></li>
-                            <li><a ng-href="#/">2014</a></li>
-                            <li><a ng-href="#/">2015</a></li>
-                            <li><a ng-href="#/">2016</a></li>
+                            <li><a ng-href="/pdf/planeacion/ingresos/Formato de ingresos propios 2015.xlsx" target="_blank">2015</a></li>
+                            <li><a ng-href="/pdf/planeacion/ingresos/PRESUPUESTO DE INGRESOS PROPIOS 2016.xlsx" target="_blank">2016</a></li>
+                            <li><a ng-href="/pdf/planeacion/ingresos/FORMATOS PARA PROPORCIONAR INGRESOS PROPIOS DE ORGANISMOS DESCENTRALIZADOS 2017.xlsx" target="_blank">2017</a></li>
                           </ul>
                       </li>
                       <li><a ng-href="#/">Egresos</a>
                           <ul class="dropdown-menu sub-menu3 egresos">
-                              <li><a ng-href="#/">2013</a></li>
-                              <li><a ng-href="#/">2014</a></li>
-                              <li><a ng-href="#/">2015</a></li>
-                              <li><a ng-href="#/">2016</a></li>
+                              <li><a ng-href="/pdf/planeacion/egresos/Presupuesto 2015.xlsx">2015</a></li>
+                              <li><a ng-href="/pdf/planeacion/egresos/Presupuesto 2016.xlsx">2016</a></li>
+                              <li><a ng-href="/pdf/planeacion/egresos/Presupuesto 2017.xlsx">2017</a></li>
                           </ul>
                       </li>
                     </ul>
                   </li>
-                  <li><a ng-href="#/">Evaluación De Metas POA</a></li>
-                  <li><a ng-href="#/">Evaluación De Indicadores ETCA</a></li>
-                  <li><a ng-href="#/">Sistema De Indicadores De Procedimientos</a></li>
-                  <li class="dropdown"><a ng-href="#/">Estudios Institucionales</a>
+                  <li><a ng-href="#/">Evaluación de Metas POA</a></li>
+                  <li class=" dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown">Evaluación de Indicadores ETCA</a>
                     <ul class="dropdown-menu sub-menu acreditacion">
-                      <li><a ng-href="#/">Hermosillo</a></li>
-                      <li><a ng-href="#/">San Luis</a></li>
+                        <li><a ng-href="/pdf/planeacion/etca/ETCA 2015.xlsx" target="_blank">2015</a></li>
+                        <li><a ng-href="/pdf/planeacion/etca/ETCA 2016.xlsx" target="_blank">2016</a></li>
+                        <li><a ng-href="/pdf/planeacion/etca/ETCA 2017.xlsx" target="_blank">2017</a></li>                                                
+                    </ul>
+                  </li>
+                  <li><a ng-href="#/">Sistema de Indicadores de Procedimientos</a></li>
+                  <li class="dropdown"><a ng-href="#/">Estudios Institucionales</a>
+                      <ul class="dropdown-menu sub-menu acreditacion">
+                        <li><a ng-href="#/">2015</a></li>
+                        <li><a ng-href="#/">2016</a></li>
+                        <li><a ng-href="#/">2017</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown"><a ng-href="#/">Agenda Estratégica</a>
+                    <ul class="dropdown-menu sub-menu acreditacion">
+                      <li><a ng-href="/pdf/planeacion/agendaEstrategica/Agenda Estrategica Rectoria 2017.xlsx" target="_blank">Rectoría</a></li>
+                      <li><a ng-href="#/">San Luis Río Colorado</a></li>
                       <li><a ng-href="#/">Magdalena</a></li>
-                      <li><a ng-href="#/">Navojoa</a></li>
+                      <li><a ng-href="/pdf/planeacion/agendaEstrategica/Agenda Estrategica ua 2017-1.xlsx">Hermosillo</a></li>
                       <li><a ng-href="#/">Benito Juárez</a></li>
+                      <li><a ng-href="#/">Navojoa</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -92,15 +102,15 @@
               <!--ACREDITACION-->
               <li class="alignLiMenu dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown" style="height: 61px">Acreditación</a>
               <ul class="dropdown-menu">
-                  <li><a ng-href="#/acreditacion">Organismos Acreditadores</a></li>
-                  <li class="alignLiMenu dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown">Acreditaciones Institucionales</a>
+                  <li><a ng-href="#/organismosAcreditadores">Organismos Acreditadores</a></li>
+                  <li class=" dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown">Acreditaciones Institucionales</a>
                     <ul class="dropdown-menu sub-menu acreditacion">
                         <li><a ng-href="#/">2017</a></li>
                         <li><a ng-href="#/">2016</a></li>
                         <li><a ng-href="#/">2015</a></li>                                                
                     </ul>
                   </li>
-                  <li><a ng-href="#/">Plataforma De Acreditación</a></li>
+                  <li><a ng-href="http://35.184.92.106:8000/accounts/login/?next=/" target="_blank">Plataforma de Acreditación</a></li>
                 </ul>
               </li>
               <!--SGC-->
@@ -108,13 +118,13 @@
               <!--ESTADISTICA-->
               <li class="alignLiMenu"><a ng-href="#/estadistica">Estadistíca</a></li>
               <!--FONDOS-->
-              <li class="alignLiMenu dropdown"><a ng-href="#/" class="dropdown-toggle" data-toggle="dropdown" style="height: 61px">Fondos</a>
-                <ul class="dropdown-menu">
+              <li class="alignLiMenu "><a ng-href="http://www.ues.mx/pagina.aspx?p=24&s=1#" target="_blank"  style="height: 61px">Fondos</a>
+                <!--<ul class="dropdown-menu">
                   <li><a ng-href="#/fondosExtraordinarios">Fondos Ext.</a></li>
                   <li><a ng-href="#/">PIFI</a></li>
                   <li><a ng-href="#/">PROFOCIE</a></li>
                   <li><a ng-href="#/">FAM</a></li>
-                </ul>
+                </ul>-->
               </li>
               <!--PORTAFOLIO-->
              <li class="alignLiMenu"><a ng-href="#/">Transparencia</a></li>
@@ -135,7 +145,6 @@
         <p class="footerText"><span class="glyphicon glyphicon-education pull-left"></span>Universidad Estatal de Sonora<span class="glyphicon glyphicon-education pull-right"></span></p>
       </div>
     </div>
-
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -163,8 +172,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/inicio.js"></script>
         <script src="scripts/controllers/organigrama.js"></script>
         <script src="scripts/controllers/sgc.js"></script>
         <script src="scripts/controllers/normatividad.js"></script>

@@ -13,6 +13,10 @@ angular.module('pApp')
 var vm = this;
  vm.switchSecondRow = true; 
  
+ $(document).ready(function () { //  this function send top page after load
+    $(window).scrollTop(0);
+}); 
+
 //public functions
 
 //private functions

@@ -11,7 +11,11 @@ angular.module('pApp')
 .controller('ScgCtrl', function(){
     var vm = this;
 
-     window.onscroll = function(){sgc()};
+    $(document).ready(function () { //  this function send top page after load
+        $(window).scrollTop(0);
+    }); 
+
+     window.onscroll = function(){sgc()}; //  this function  active all scroll animation's 
         var firstTime = true;
         function sgc(){
              
@@ -80,13 +84,7 @@ angular.module('pApp')
                 }
             }
         }
-
-        /*
-        =======================
-                LOGIN
-        =======================
-        */
-        
+ 
 });
 	
    
