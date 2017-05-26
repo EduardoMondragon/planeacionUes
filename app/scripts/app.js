@@ -51,6 +51,15 @@ angular
       .when('/organismosAcreditadores',{/*organismosAcreditadores*/
         templateUrl: 'views/organismosAcreditadores.html'
       })
+      .when('/numeralia',{
+        templateUrl: 'views/numeralia.html'
+      })
+      .when('/series-estadisticas',{
+        templateUrl: 'views/series-estadisticas.html'
+      })
+      .when('/sieues',{
+        templateUrl: 'views/sieues.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

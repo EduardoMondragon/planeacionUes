@@ -14,7 +14,7 @@ vm.pdf = [
     {
         titulo: "Reglamento de Planeación",
         src: "http://www.ues.mx/docs/conocenos/normatividad/reglamentos/ReglamentoDePlaneacioonYEvaluacion2016.pdf",
-        img: "/images/normatividad/1.png"
+        img: "/images/normatividad/abc.jpg"
     },
     {
         titulo: "Manual de Procedimientos",

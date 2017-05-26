@@ -1,0 +1,24 @@
+<div class="estasAqui_estadistica">
+    <h4 class="estasAquiTexto">
+        <strong class="estasAquiColor">Estas aqui :</strong> Estadística / <span class="ubicacionNavegacion">SIEUES</span></h4>  
+</div>
+<div class="fixedtop">
+    <label for="sel1">Graficas</label>
+    <select class="form-control" name="options" onchange="document.getElementById('graphframe').src = this.options[this.selectedIndex].value">
+        <option value="https://reports.zoho.com/ZDBDataSheetView.cc?OBJID=1386801000000005259&STANDALONE=true&privatelink=4817c586f03a27c8d0a0fb88480a646e&INTERVAL=-1&REMTOOLBAR=true&INCLUDETITLE=true&INCLUDEDESC=true">Ciclo Escolar</option>
+        <option value="https://reports.zoho.com/ZDBDataSheetView.cc?OBJID=1386801000000006142&STANDALONE=true&privatelink=31daa21b7ee55b7a8eaa9de163c1c88c&INTERVAL=-1&REMTOOLBAR=true&INCLUDETITLE=true&INCLUDEDESC=true">Presupuesto Escolar</option>
+    </select>
+</div>
+<div class="bodylike"></div>
+<div class="container">
+<div class="sizepred">
+    <h2 class="e_numeralia_h2_2 align-middle">INFORMACIÓN ESTADÍSTICA</h2>
+    <iframe src="https://reports.zoho.com/ZDBDataSheetView.cc?OBJID=1386801000000005259&STANDALONE=true&privatelink=4817c586f03a27c8d0a0fb88480a646e&INTERVAL=-1&REMTOOLBAR=true&INCLUDETITLE=true&INCLUDEDESC=true" id="graphframe" frameborder="0" width="100%" height="800px"></iframe>
+</div>
+</div>
+<div id="container">
+    <canvas id="canvas"></canvas>
+</div>
+<script type="text/javascript" src="scripts/estadistica/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/estadistica/TweenMax.min.js"></script>
+<script type="text/javascript" src="scripts/estadistica/canvas.js"></script>
