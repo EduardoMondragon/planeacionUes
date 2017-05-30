@@ -1,140 +1,99 @@
 <div class="estasAqui">
     <h4 class="estasAquiTexto">
-        <strong class="estasAquiColor">Estas aqui :</strong> inicio / <span class="ubicacionNavegacion">Blog</span></h4>  
+        <strong class="estasAquiColor">Estas aqui :</strong> inicio / <span class="ubicacionNavegacion">Blog</span><a class="btn btn-default pull-right" ng-href="#/blogAdministrator">administrator</a></h4>  
 </div>
-<div class="row blog myContainer innerTopOn">
-    <!-- 1-->
+<div class="row myContainer innerTopOn">
+<!-- 
+==================
+BIG CARD
+==================
+-->
     <div class="col-xs-12 innerBottomOn">
-         <div class="example-2 card blog" >
-            <div class="wrapper" style="height: 10px;">
+         <div class="example-2 card blog">
+            <div class="wrapper" style="background-image: url('{{vm.wrapper}}');">
                 <div class="headerBlog">
                     <div class="date">
-                        <span class="day">12</span>
-                        <span class="month">Ago</span>
-                        <span class="year">2016</span>
+                        <span>{{ vm.newsPublicationDate|date:yy/mm/dd }}</span>
                     </div>
-                    <ul class="menu-content">
-                        <li><a href="#" class="fa fa-bookmark-o blog"></a></li>
-                        <li><a href="#" class="fa fa-heart-o blog"><span>18</span></a></li>
-                        <li><a href="#" class="fa fa-comment-o blog"><span>3</span></a></li>
-                    </ul>
                 </div>
                 <div class="data">
-                    <div class="content" style="background-color: rgba(0, 0, 0, .4);">
-                        <span class="author">Manuel D.</span>
-                        <h1 class="titleBlog"><a href="#" style="color: white; text-decoration: none;">{{vm.title}}</a></h1>
-                        <p class="text">GCM GLOBAL CERTIFICATION MEXICO, organismo certificador. La recertificación para el Sistema de Gestión de Calidad de la Universidad Estatal de Sonora, se logró luego de la auditoría realizada por el organismo certificador GCM GLOBAL CERTIFICATION MEXICO, el cual recomendó a la institución educativa para refrendar la certificación de la norma ISO 9001:2008.</p>
-                        <a href="" class="button" data-toggle="modal" data-target="#myModal" >Leer Más</a>
+                    <div class="content">
+                        <span class="author">{{ vm.news.author }}</span>
+                        <h1 class="blogTitle" data-toggle="modal" data-target="#BlogModal">{{ vm.news.title | limitTo:90 }}</h1>
+                        <p class="text">{{ vm.newsText | limitTo:40 }}</p>
+                        <p class="button" data-toggle="modal" data-target="#BlogModal">Leer Más</p>
                     </div>
                 </div>
             </div>
         </div>
     </div> 
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content modalBodyLogin">
-        <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>			
-			  <form class="myContainer text-center">
-				  <img src="/images/inicio/slide/slide2.png" class="modalImage">
-				  <h1 class="loginTitle innerBottomOn">{{vm.title}}</h1>       
-                  <p class="modalText">GCM GLOBAL CERTIFICATION MEXICO, organismo certificador.
-La recertificación para el Sistema de Gestión de Calidad de la Universidad Estatal de Sonora, se logró luego de la auditoría realizada por el organismo certificador GCM GLOBAL CERTIFICATION MEXICO, el cual recomendó a la institución educativa para refrendar la certificación de la norma ISO 9001:2008.
-En la última semana del mes de octubre del año 2016, se llevaron a cabo las auditorias en Rectoría y las unidades académicas de Magdalena y Hermosillo, por parte del Ing. Alejandro Nájera.
-Durante la reunión de cierre el Ing. Alejandro Nájera, auditor líder designado para este ejercicio por parte del organismo de certificación, destacó que se percibe el gran desarrollo que ha tenido la Universidad, haciendo mención a los proyectos de construcción y equipamiento de laboratorios que ha tenido las Universidad, el seguimiento que se le otorga al alumno desde su ingreso hasta su egreso; así como los esfuerzos en brindar un mejor servicio al alumno, sector productivo y sociedad.
-El Sistema de Gestión de Calidad está conformado por 6 sitios, con un total de 62 procesos y 206 procedimientos teniendo como alcance regir los procesos de enseñanza – aprendizaje, contemplando los procesos administrativos y académicos relacionados para la provisión de los servicios educativos de nivel superior.
-GCM GLOBAL CERTIFICATION MEXICO fue fundada originalmente en 1993 y registrada como una Empresa privada limitada por acciones en el Reino Unido con el propósito de ser un organismo de certificación calificado y operar mediante los más altos estándares de calidad para brindar el mejor servicio y el más alto valor agregado a nuestros clientes.
-En 1997, la dirección tomó la decisión de ampliar los servicios en el extranjero. Hoy Global GROUP se refiere a una red internacional de empresas.
-Con presencia en los 5 continentes y más de 40 países nuestro equipo demuestra conocimiento empresarial, así como la experiencia en una amplia gama de sectores del Mercado.
-Actualmente nuestra filial Mexicana tiene presencia en Ciudad de México, Monterrey, Querétaro, León y Hermosillo para poder facilitar la cercanía y comunicación con nuestros clientes.</p>           
-			 </form>		
-        </div>
-      </div>  
-    </div>
-  </div>
-<!-- 2-->
+ 
+    <!-- 
+    ==================
+    SMALL CARD
+    ==================
+    -->
     <div class="col-xs-4 innerBottomOn">
          <div class="example-2 card blog" >
             <div class="wrapper" style="background-image: url('{{vm.wrapper}}');">
                 <div class="headerBlog">
                     <div class="date">
-                        <span class="day">10</span>
-                        <span class="month">Ago</span>
-                        <span class="year">2016</span>
+                        <span>{{vm.newsPublicationDate|date:yy/mm/dd}}</span>
                     </div>
-                    <ul class="menu-content">
-                        <li><a href="#" class="fa fa-bookmark-o blog"></a></li>
-                        <li><a href="#" class="fa fa-heart-o blog"><span>18</span></a></li>
-                        <li><a href="#" class="fa fa-comment-o blog"><span>3</span></a></li>
-                    </ul>
                 </div>
                 <div class="data">
-                    <div class="content" style="background-color: rgba(0, 0, 0, .4);">
-                        <span class="author">Manuel D</span>
-                        <h1 class="titleBlog"><a href="#" style="color: white; text-decoration: none;">{{vm.title | limitTo:40}}...</a></h1>
-                        <p class="text">GCM GLOBAL CERTIFICATION MEXICO, organismo certificador. La recertificación para el Sistema de Gestión de Calidad de la Universidad Estatal de Sonora...</p>
-                        <a href="#" class="button" >Leer Más</a>
+                    <div class="content">
+                        <span class="author">{{ vm.reporterName }}</span>
+                        <h1 class="blogTitle" data-toggle="modal" data-target="#BlogModal">{{ vm.newsTitle | limitTo:40 }}</h1>
+                        <p class="text">{{ vm.newsText | limitTo:40 }}</p>
+                         <p  class="button" data-toggle="modal" data-target="#BlogModal">Leer Más</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>   
-
- <!-- 3 -->   
-     <div class="col-xs-4 innerBottomOn">
-         <div class="example-2 card blog" >
-            <div class="wrapper" style="background-image: url('{{vm.wrapper2}}');">
+    </div>
+    <!-- 
+    ==================
+    SMALL CARD
+    ==================
+    -->
+    <div class="col-xs-4 innerBottomOn " ng-repeat="new in vm.blog">
+         <div class="example-2 card blog">
+            <div class="wrapper" style="background-image: url('{{new.imageNew}}');">
                 <div class="headerBlog">
                     <div class="date">
-                        <span class="day">2</span>
-                        <span class="month">Jun</span>
-                        <span class="year">2016</span>
+                        <span>{{new.newsPublicationDate|date:yy/mm/dd}}</span>
                     </div>
-                    <ul class="menu-content">
-                        <li><a href="#" class="fa fa-bookmark-o blog"></a></li>
-                        <li><a href="#" class="fa fa-heart-o blog"><span>18</span></a></li>
-                        <li><a href="#" class="fa fa-comment-o blog"><span>3</span></a></li>
-                    </ul>
                 </div>
                 <div class="data">
-                    <div class="content" style="background-color: rgba(0, 0, 0, .4);">
-                        <span class="author">Manuel D.</span>
-                        <h1 class="titleBlog"><a href="#" style="color: white; text-decoration: none;">{{vm.title | limitTo:40}}...</a></h1>
-                        <p class="text">GCM GLOBAL CERTIFICATION MEXICO, organismo certificador. La recertificación para el Sistema de Gestión de Calidad de la Universidad Estatal de Sonora...</p>
-                        <a href="#" class="button" >Leer Más</a>
+                    <div class="content">
+                        <span class="author">{{ new.reporterName }}</span>
+                        <h1 class="blogTitle" data-toggle="modal" data-target="#BlogModal">{{ new.newsTitle | limitTo:40 }}</h1>
+                        <p class="text">{{ new.newsText | limitTo:40 }}</p>
+                        <p  class="button" data-toggle="modal" data-target="#BlogModal">Leer Más</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>   
+    </div>     
+</div>     
 
-<!-- 4-->
-     <div class="col-xs-4 innerBottomOn">
-         <div class="example-2 card blog" >
-            <div class="wrapper" style="height: 10px;">
-                <div class="headerBlog">
-                    <div class="date">
-                        <span class="day">1</span>
-                        <span class="month">Mar</span>
-                        <span class="year">2016</span>
-                    </div>
-                    <ul class="menu-content">
-                        <li><a href="#" class="fa fa-bookmark-o blog"></a></li>
-                        <li><a href="#" class="fa fa-heart-o blog"><span>18</span></a></li>
-                        <li><a href="#" class="fa fa-comment-o blog"><span>3</span></a></li>
-                    </ul>
-                </div>
-                <div class="data">
-                    <div class="content" style="background-color: rgba(0, 0, 0, .4);">
-                        <span class="author">Manuel D.</span>
-                        <h1 class="titleBlog"><a href="#" style="color: white; text-decoration: none;">{{vm.title | limitTo:40}}...</a></h1>
-                        <p class="text">GCM GLOBAL CERTIFICATION MEXICO, organismo certificador. La recertificación para el Sistema de Gestión de Calidad de la Universidad Estatal de Sonora...</p>
-                        <a href="#" class="button" >Leer Más</a>
-                    </div>
-                </div>
-            </div>
+<!-- 
+==================
+MODAL CONTENT
+==================
+-->
+ <div class="modal fade" id="BlogModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content modalBodyLogin">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>			
+			  <form class="myContainer text-center">
+				  <img src="{{vm.wrapper}}" class="modalImage">
+				  <h1 class="loginTitle innerBottomOn">{{vm.title}}</h1>       
+                  <p class="modalText"></p>           
+			 </form>		
         </div>
-    </div>   
-</div>
+      </div>  
+    </div>
+  </div>

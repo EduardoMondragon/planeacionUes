@@ -23,12 +23,14 @@ angular
       .when('/', {/*INICIO*/
         templateUrl: 'views/inicio.html',
         controller: 'InicioCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        resolve: { onLoad: scrollTop }
       })
       .when('/organigrama',{/*ORGANIGRAMA*/
         templateUrl: 'views/organigrama.html',
         controller: 'OrganigramaCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        resolve: { onLoad: scrollTop }
       })
       .when('/directorio',{/*DIRECTORIO*/
         templateUrl: 'views/directorio.html'
@@ -36,31 +38,49 @@ angular
       .when('/sgc',{/*SGC*/
         templateUrl: 'views/sgc.html',
         controller: 'ScgCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        resolve: { onLoad: scrollTop }
       })
       .when('/normatividad',{/*NORMATIVIDAD*/
         templateUrl: 'views/normatividad.html',
         controller: 'NormatividadCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        resolve: { onLoad: scrollTop }
       })
-      .when('/blog',{/*NORMATIVIDAD*/
+      .when('/blog',{/*Blog*/
         templateUrl: 'views/blog.html',
         controller: 'BlogCtrl',
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+        resolve: { onLoad: scrollTop }
+      })
+      .when('/blogAdministrator',{/*Blog Administrador*/
+        templateUrl: 'views/blogAdministrator.html',
+        controller: 'BlogAdministratorCtrl',
+        controllerAs: 'vm',
+        resolve: { onLoad: scrollTop }
       })
       .when('/organismosAcreditadores',{/*organismosAcreditadores*/
-        templateUrl: 'views/organismosAcreditadores.html'
+        templateUrl: 'views/organismosAcreditadores.html',
+        resolve: { onLoad: scrollTop }
       })
       .when('/numeralia',{
-        templateUrl: 'views/numeralia.html'
+        templateUrl: 'views/numeralia.html',
+        resolve: { onLoad: scrollTop }
       })
       .when('/series-estadisticas',{
-        templateUrl: 'views/series-estadisticas.html'
+        templateUrl: 'views/series-estadisticas.html',
+        resolve: { onLoad: scrollTop }
       })
       .when('/sieues',{
-        templateUrl: 'views/sieues.html'
+        templateUrl: 'views/sieues.html',
+        resolve: { onLoad: scrollTop }
       })
       .otherwise({
         redirectTo: '/'
       });
+      function scrollTop () {
+        $(document).ready(function () {
+            $(window).scrollTop(0);
+        });
+      }
   });

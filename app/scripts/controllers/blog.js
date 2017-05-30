@@ -1,5 +1,4 @@
 'use strict';
-
 /**
  * @ngdoc function
  * @name pApp.controller:BlogCtrl
@@ -8,13 +7,17 @@
  * Controller of the pApp
  */
 angular.module('pApp')
-  .controller('BlogCtrl', function () {
+  .controller('BlogCtrl', function ($firebaseArray) {
    var vm = this;
-   vm.title = "RECIBE LA UNIVERSIDAD ESTATAL DE SONORA RECERTIFICACIÓN DEL SISTEMA DE GESTIÓN DE CALIDAD ISO 9001:2008";
-    $(document).ready(function () {
-        $(window).scrollTop(0);
-    }); 
-
+    //BLOCK DECLARATION
     vm.wrapper = '/images/inicio/slide/u3.jpg';
-    vm.wrapper2 = '/images/inicio/slide/u1.jpg';
+    vm.reporterName = "LALO";
+    vm.newsTitle = "Soy Titulo";
+    vm.newsText = "texto texto texto";
+    vm.newsPublicationDate = new Date();
+
+    vm.news = firebase.database().ref('blog/' +'NoticiaPrincipal/' + 'unicaNoticia');
+    //public functions
+
+    //private functions
 });

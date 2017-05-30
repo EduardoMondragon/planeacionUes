@@ -1,0 +1,195 @@
+<!-- 
+==================
+LOGIN
+==================
+-->
+
+<!-- 
+==================
+BUTTONS SWITCH
+==================
+-->
+<div class="row myContainer" ng-show="vm.switch">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-3 lineSeparator">
+            <button class="btn btn-lg  btn-block blogAdminSwitchButtons" id="left" ng-click="vm.switchButton = true; vm.FocusSwitch();">Agregar una Noticia Principal</button>
+        </div>
+        <div class="col-xs-3">
+            <button class="btn btn-lg  btn-block blogAdminSwitchButtons" id="right" ng-click="vm.switchButton = false; vm.FocusSwitch();">Agregar una Noticia Tradicional</button>
+        </div>
+</div>
+<!-- 
+==================
+Noticia Principal
+==================
+-->
+<div class=" row myContainer noticiaPrincipal innerTopOn" style="margin-bottom: 100px;" ng-hide="!vm.switchButton">
+    <div class="col-xs-5"><h1 class="innerBottomOn">Noticia Principal</h1></div>
+    <!-- 
+    Seleccionar Imagen
+    -->
+<form novalidate name="form">
+            <div class="col-xs-9 inputsInner">
+                <div class="input-group inputsInner">
+                    <button class="btn btn-warning" type="button" id="upload" >Seleccionar Imagen <i class="fa fa-picture-o"></i></button>
+                    <input id="inpImage" type='file'>
+                    <p id="b64"></p>
+                </div>
+                <!-- 
+                Nombre del Autor
+                -->
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="Nombre del Autor" ng-model="vm.autorName" required>
+                </div>
+            </div>
+            <!-- 
+            Mostrar avatar Imagen
+            -->
+            <div class="col-xs-3">
+                <center>
+                    <img class="imgSelect" id="img">
+                </center>       
+            </div>
+            <!-- 
+            Titulo de la noticia
+            -->
+            <div class="col-xs-12 inputsInner">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-newspaper-o"></i></span>
+                    <input type="text" class="form-control" placeholder="Títlulo de la Noticia" ng-model="vm.newsTitle" required>
+                </div>
+            </div>
+            <!-- 
+            Contenido de la noticia
+            -->
+            <div class="col-xs-12 inputsInner">
+                <div class="form-group">
+                    <label for="comment">Contenido:</label>
+                    <textarea class="form-control" rows="5" id="comment" ng-model="vm.newsText" required></textarea>
+                </div>
+            </div>
+    <!-- 
+    Publicar
+    -->
+    <div class="col-xs-3 inputsInner form-group">
+        <button class="btn btn-lg btn-block animated btn-publicar" type="submit" ng-click="vm.addNewsImportant();" ng-disabled="!form.$valid">Publicar</button>    
+    </div>
+</form> 
+    <!-- 
+    preview
+    -->
+    <div class="col-xs-1 inputsInner pull-right">
+        <i class="fa fa-eye pull-right" data-toggle="modal" data-target="#BlogModalSimple"></i>    
+    </div> 
+    <!-- 
+    ==================
+    MODAL NOTICIA PRINCIPAL
+    ==================
+    -->
+    <div class="modal fade" id="BlogModalSimple" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content modalBodyLogin">
+            <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>			
+                <form class="myContainer text-center">
+                    <!--<div  class="modalImage" id="imgx"></div>-->
+                    <img id="imgModal" class="modalImage">
+                    <p class="modalText">{{vm.autorName}}</p>
+                    <h1 class="loginTitle innerBottomOn">{{vm.newsTitle}}</h1>       
+                    <p class="modalText">{{vm.newsText}}</p>           
+                </form>		
+            </div>
+        </div>  
+        </div>
+    </div>     
+</div><!--end noticia principal-->
+
+
+
+<!-- 
+==================
+Noticia Tradicional
+==================
+-->
+<div class=" row myContainer noticiaPrincipal innerTopOn" style="margin-bottom: 100px;" ng-show="!vm.switchButton">
+    <div class="col-xs-5"><h1 class="innerBottomOn">Noticia Tradicional</h1></div>
+    <!-- 
+    Seleccionar Imagen
+    -->
+<form novalidate name="formSimple">
+            <div class="col-xs-9 inputsInner">
+                <div class="input-group inputsInner">
+                    <button class="btn btn-success" type="button" id="uploadSimple" >Seleccionar Imagen <i class="fa fa-picture-o"></i></button>
+                    <input id="inpImageSimple" type='file'>
+                    <p id="b64Simple"></p>
+                </div>
+                <!-- 
+                Nombre del Autor
+                -->
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="Nombre del Autor" ng-model="vm.autorNameSimple" required>
+                </div>
+            </div>
+            <!-- 
+            Mostrar avatar Imagen
+            -->
+            <div class="col-xs-3">
+                <center>
+                    <img class="imgSelectSimple" id="imgSimple">
+                </center>       
+            </div>
+            <!-- 
+            Titulo de la noticia
+            -->
+            <div class="col-xs-12 inputsInner">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-newspaper-o"></i></span>
+                    <input type="text" class="form-control" placeholder="Títlulo de la Noticia" ng-model="vm.newsTitleSimple" required>
+                </div>
+            </div>
+            <!-- 
+            Contenido de la noticia
+            -->
+            <div class="col-xs-12 inputsInner">
+                <div class="form-group">
+                    <label for="comment">Contenido:</label>
+                    <textarea class="form-control" rows="5" id="comment" ng-model="vm.newsTextSimple" required></textarea>
+                </div>
+            </div>
+    <!-- 
+    Publicar
+    -->
+    <div class="col-xs-3 inputsInner form-group">
+        <button class="btn btn-lg btn-block animated btn-publicar" type="submit" ng-click="vm.addNewsSimple();" ng-disabled="!formSimple.$valid">Publicar</button>    
+    </div>
+</form> 
+    <!-- 
+    preview
+    -->
+    <div class="col-xs-1 inputsInner pull-right">
+        <i class="fa fa-eye pull-right" data-toggle="modal" data-target="#BlogModal"></i>    
+    </div> 
+    <!-- 
+    ==================
+    MODAL NOTICIA TRADICIONAL
+    ==================
+    -->
+    <div class="modal fade" id="BlogModal" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content modalBodyLogin">
+            <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>			
+                <form class="myContainer text-center">
+                    <!--<div  class="modalImage" id="imgx"></div>-->
+                    <img id="imgModalSimple" class="modalImage">
+                    <p class="modalText">{{vm.autorNameSimple}}</p>
+                    <h1 class="loginTitle innerBottomOn">{{vm.newsTitleSimple}}</h1>       
+                    <p class="modalText">{{vm.newsTextSimple}}</p>           
+                </form>		
+            </div>
+        </div>  
+        </div>
+    </div>     
+</div><!--end noticia simple-->

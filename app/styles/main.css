@@ -767,49 +767,6 @@ hr.lineTitleSgc{/*linea para dividir titulos principales de los contenidos*/
 /*
 ============================
 ============================
-            LOGIN
-============================
-============================
-*/
-@media screen and (min-width: 768px) {
-	
-	#myModal .modal-dialog  {width:900px;}
-
-}
-#myModal .modal-dialog  {width:85%;}
-.modalBodyLogin{
-  background: #272125;
-  height: auto;
-}
-
-.modalImage{
-  border: 3px solid #bdc3c7;
-  padding: 3px;
-  max-width: 900px;
-}
-@media screen and (max-width: 900px) {
-	
-	.modalImage{
-  border: 3px solid #bdc3c7;
-  padding: 3px;
-  width: 368px;
-}
-
-}
-.loginTitle{
-  color: white;
-  text-align: justify;
-}
-
-.modalText{
-  color: white;
-  text-align: justify;
-}
-
-
-/*
-============================
-============================
 Acreditacion/organismos acreditadores
 ============================
 ============================
@@ -970,27 +927,17 @@ Acreditacion/organismos acreditadores
 ============================
 ============================
 */
- 
-   
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 * {
   box-sizing: border-box;
 }
-
-
-
-h1 .blog {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
-
 
 .card .blog {
   float: left;
   padding: 0 1.7rem;
   width: 50%;
 }
-.card .menu-content {
+.card{
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1044,29 +991,26 @@ h1 .blog {
   padding: 1em;
   position: relative;
   z-index: 1;
+  background-color: rgba(0, 0, 0, .4);
 }
 .card .author {
   font-size: 12px;
 }
-.titleBlog {
+.blogTitle {
   margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
 }
+
 .card .text {
   height: 70px;
   margin: 0;
   padding-top: 2px;
 }
-.card input[type='checkbox'] {
-  display: none;
-}
-.card input[type='checkbox']:checked + .menu-content {
-  -webkit-transform: translateY(-60px);
-          transform: translateY(-60px);
-}
 
 .example-2 .wrapper {
-  background: url(/images/inicio/slide/slide2.png) center/cover no-repeat;
-  /*background-size: 100% 100%;*/
+  background: center/cover no-repeat;
 }
 .example-2 .wrapper:hover .menu-content span {
   -webkit-transform: translate(-50%, -10px);
@@ -1076,7 +1020,7 @@ h1 .blog {
 .example-2 .headerBlog {
   color: #fff;
   padding: 1em;
-   text-shadow: 1px 1px rgba(0, 0, 0, .5);
+  text-shadow: 1px 1px rgba(0, 0, 0, .5);
 }
 .example-2 .headerBlog::before, .example-2 .headerBlog::after {
   content: '';
@@ -1087,28 +1031,18 @@ h1 .blog {
 }
 .example-2 .headerBlog .date {
   float: left;
-  font-size: 12px;
+  font-size: 13px;
 }
 .example-2 .menu-content {
   float: right;
 }
-.example-2 .menu-content li {
-  margin: 0 5px;
-  position: relative;
-}
-.example-2 .menu-content span {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-}
+
 .example-2 .data {
   color: #fff;
   -webkit-transform: translateY(calc(70px + 4em));
           transform: translateY(calc(70px + 4em));
 }
-.example-2 .title a {
-  color: #fff;
-}
+
 .example-2 .button {
   display: block;
   width: 100px;
@@ -1119,6 +1053,9 @@ h1 .blog {
   line-height: 1;
   position: relative;
   font-weight: 700;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
 }
 .example-2 .button::after {
   content: '\2192';
@@ -1136,8 +1073,79 @@ h1 .blog {
           transform: translate(5px, -50%);
   opacity: 1;
 }
+/*modal blog*/
 
-=======
+@media screen and (min-width: 768px) {
+	
+	#BlogModal .modal-dialog  {
+    width:900px;
+    }
+    #BlogModalSimple .modal-dialog  {
+    width:900px;
+    }
+
+}
+#BlogModal .modal-dialog  {
+  width:80%;
+  margin-top: 0px;
+  height: 100%;
+  }
+  #BlogModalSimple .modal-dialog  {
+  width:80%;
+  margin-top: 0px;
+  height: 100%;
+  }
+
+.modalBodyLogin{
+  background: rgba(0, 0, 0, 0.9);
+  height: auto;
+}
+
+
+.close {
+    float: right;
+    font-size: 41px;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .8;
+    outline: none;
+}
+
+.modalImage{
+  border: 3px solid #bdc3c7;
+  padding: 3px;
+  max-width: 900px;
+}
+@media screen and (max-width: 900px) {
+	
+	.modalImage{
+  border: 3px solid #bdc3c7;
+  padding: 3px;
+  width: 300px;
+}
+
+}
+.loginTitle{
+  color: white;
+  text-align: justify;
+}
+
+.modalText{
+  color: white;
+  text-align: justify;
+}
+
+/*
+============================
+============================
+        ESTADISTICA
+============================
+============================
+*/
+
 .pull-right {
 	margin-right: 8px;
 }
@@ -1205,4 +1213,130 @@ h1 .blog {
 		margin-top: 50px;
 	}
 }
->>>>>>> b94b92c4fd99a2ac1f2812db071ea3da559d6339
+
+/*
+============================
+============================
+      BLOG ADMINISTRATOR
+============================
+============================
+*/
+@media screen and (max-width: 940px){
+	.blogAdminSwitchButtons{
+    font-size: 8px!important;
+  }
+}
+.blogAdminSwitchButtons{
+  background-color: transparent;
+  font-size: 20px;
+  color: #2c3e50;
+  border: 3px solid transparent;
+  border-radius: 0px;
+  padding: 10px 0px!important; 
+}
+.blogAdminSwitchButtons:hover{
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: 3px solid transparent;
+  border-radius: 0px;
+}
+.blogAdminSwitchButtons:active{
+  outline: none!important;
+  border: 3px solid transparent!important;
+  border-bottom: 3px solid #faa636!important;
+  box-shadow: none!important;
+}
+.blogAdminSwitchButtons:focus{
+  background-color: transparent;
+  border: 3px solid transparent;
+  border-radius: 0px;
+  outline: none;
+}
+
+.lineSeparator{
+  border-right: 3px solid #95a5a6;
+}
+.noticiaPrincipal{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: #5e292a;
+}
+.inputsInner{
+  margin-bottom: 10px;
+}
+#inpImage{
+  display: none;
+}
+#inpImageSimple{
+  display: none;
+}
+#b64{
+  display: none;
+}
+#b64Simple{
+  display: none;
+}
+.imgBlog{
+  display: none;
+  padding: 3px;
+  border: 4px solid #e67e22;
+  animation-name: bounceIn;
+}
+
+
+.upload-previewModal{
+  background-size: cover !important;
+  animation-name: bounceIn;
+  border: 3px solid #bdc3c7;
+  padding: 3px;
+  height: 511px;
+  width: 900px;
+  max-width: 900px;
+}
+@media screen and (max-width: 900px) {
+	
+	#img{
+    margin-top: -0px!important;
+    width: 70px;
+    height: 70px!important;
+  }
+  #imgSimple{
+    margin-top: -0px!important;
+    width: 70px;
+    height: 70px!important;
+  }
+  .btn-publicar{
+    font-size: 10px;
+    padding-left: 13px!important;
+  }
+}
+#img{
+  margin-top: -65px;
+  height: 150px;
+}
+#imgSimple{
+  margin-top: -65px;
+  height: 150px;
+}
+.btn-publicar{
+  color: white;
+  background-color: #5e292a;
+  outline: none;
+  border: 2px solid transparent;
+}
+.btn-publicar:hover{
+  color: #5e292a;
+  background-color: #ecf0f1;
+  border: 2px solid #5e292a;
+  animation-name: pulse;
+  
+}
+.btn-publicar:focus{
+  color: white;
+  background-color: #5e292a;
+  outline: none;
+}
+.fa-eye{
+  font-size: 30px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+}

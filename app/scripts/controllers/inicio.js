@@ -11,9 +11,4 @@ angular.module('pApp')
   .controller('InicioCtrl', function () {
    var vm = this;
    vm.title = "PLANEACIÓN";
-
-    $(document).ready(function () {
-        $(window).scrollTop(0);
-    }); 
-
 });
