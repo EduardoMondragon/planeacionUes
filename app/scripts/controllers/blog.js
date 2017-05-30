@@ -7,7 +7,7 @@
  * Controller of the pApp
  */
 angular.module('pApp')
-  .controller('BlogCtrl', function ($firebaseArray) {
+  .controller('BlogCtrl', function () {
    var vm = this;
     //BLOCK DECLARATION
     vm.wrapper = '/images/inicio/slide/u3.jpg';
