@@ -18,9 +18,9 @@ BIG CARD
                 </div>
                 <div class="data">
                     <div class="content">
-                        <span class="author">{{ vm.news.author }}</span>
-                        <h1 class="blogTitle" data-toggle="modal" data-target="#BlogModal">{{ vm.news.title | limitTo:90 }}</h1>
-                        <p class="text">{{ vm.newsText | limitTo:40 }}</p>
+                        <span class="author">{{ vm.reporterName }}</span>
+                        <h1 class="blogTitle" data-toggle="modal" data-target="#BlogModal">{{ vm.newsTitle | limitTo:90 }}</h1>
+                        <p class="text">{{ vm.newsText | limitTo:70 }}</p>
                         <p class="button" data-toggle="modal" data-target="#BlogModal">Leer Más</p>
                     </div>
                 </div>
@@ -90,8 +90,8 @@ MODAL CONTENT
           <button type="button" class="close" data-dismiss="modal">&times;</button>			
 			  <form class="myContainer text-center">
 				  <img src="{{vm.wrapper}}" class="modalImage">
-				  <h1 class="loginTitle innerBottomOn">{{vm.title}}</h1>       
-                  <p class="modalText"></p>           
+				  <h1 class="loginTitle innerBottomOn">{{vm.newsTitle}}</h1>       
+                  <p class="modalText">{{new.newsText}}</p>           
 			 </form>		
         </div>
       </div>  

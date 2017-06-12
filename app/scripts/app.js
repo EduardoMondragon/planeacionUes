@@ -75,6 +75,10 @@ angular
         templateUrl: 'views/sieues.html',
         resolve: { onLoad: scrollTop }
       })
+      .when('/sistemaIndicadoresProcedimientos',{
+        templateUrl: 'views/sistemaIndicadoresProcedimientos.html',
+        resolve: { onLoad: scrollTop }
+      })
       .otherwise({
         redirectTo: '/'
       });

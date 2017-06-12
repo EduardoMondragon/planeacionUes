@@ -201,11 +201,25 @@
 <div id="container">
     <canvas id="canvas"></canvas>
 </div>
-<script type="text/javascript" src="scripts/estadistica/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/estadistica/TweenMax.min.js"></script>
 <script type="text/javascript" src="scripts/estadistica/canvas.js"></script>
 
 <script>
-$(function () { $('.change').hide(); $('.d1').show(); $('#sel1').on("change",function () { $('.change').hide(); $('.d'+$(this).val()).show(); $('.count').each(function () { $(this).prop('Counter',0).animate({ Counter: $(this).text() }, { duration: 2000, easing: 'swing', step: function (now) { $(this).text(Math.ceil(now)); } }); }); }).val(1); });
-$('.count').each(function () { $(this).prop('Counter',0).animate({ Counter: $(this).text() }, { duration: 2000, easing: 'swing', step: function (now) { $(this).text(Math.ceil(now)); } }); });
+
+$(function () { 
+    $('.change').hide(); 
+    $('.d1').show(); 
+    $('#sel1').on("change",function () {
+         $('.change').hide(); 
+         $('.d'+$(this).val()).show(); 
+         $('.count').each(function () { 
+                $(this).prop('Counter',0).animate({ Counter: $(this).text() }, { duration: 2000, easing: 'swing', step: function (now) { 
+                    $(this).text(Math.ceil(now)); 
+                } }); }); }).val(1); 
+});
+$('.count').each(function () { 
+    $(this).prop('Counter',0).animate({ Counter: $(this).text() }, { duration: 2000, easing: 'swing', step: function (now) { 
+        $(this).text(Math.ceil(now)); 
+    } }); });
+
 </script>

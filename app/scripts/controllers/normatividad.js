@@ -11,20 +11,25 @@ angular.module('pApp')
 var vm = this;
 
 vm.pdf = [
-    {
-        titulo: "Reglamento de Planeación",
+     {
+        titulo: "Normatividad Institucional",
         src: "http://www.ues.mx/docs/conocenos/normatividad/reglamentos/ReglamentoDePlaneacioonYEvaluacion2016.pdf",
         img: "/images/normatividad/abc.jpg"
     },
     {
         titulo: "Manual de Procedimientos",
-        src: "http://www.ues.mx/docs/conocenos/normatividad/Manual%20de%20Procedimientos%20de%20la%20Universidad%20Estatal%20de%20Sonora%20(UES)%202014.pdf",
-        img: "/images/normatividad/4.png" 
+        src: "pdf/normatividad/MPUES2014.pdf",
+        img: "/images/normatividad/proc.jpg" 
     },
     {
         titulo: "Manual de Organización",
         src: "http://www.ues.mx/docs/conocenos/planeacion/MANUALDEORGANIZACION2016.pdf",
-        img: "/images/normatividad/3.png"  
+        img: "/images/normatividad/org.jpg"  
+    },
+    {
+        titulo: "Reglamento de Planeación",
+        src: "http://www.ues.mx/docs/conocenos/normatividad/reglamentos/ReglamentoDePlaneacioonYEvaluacion2016.pdf",
+        img: "/images/normatividad/abc.jpg"
     }
 ];
 

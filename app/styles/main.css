@@ -473,7 +473,7 @@ h4.estasAquiTexto{
     height: 100%;
     z-index: 2;
     background-color: #080d15;
-    opacity: .7;
+    opacity: .5;
 }
 
 .btn.btn-lg {padding: 10px 40px;}/*botones carousel*/
@@ -503,7 +503,7 @@ h4.estasAquiTexto{
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(/images/inicio/slide/u1.jpg); 
+  background-image: url(/images/inicio/slide/u1.jpg);
 }
 .fade-carousel .slides .slide-2 {
   background-image: url(/images/inicio/slide/slide1.png);
@@ -849,6 +849,39 @@ Acreditacion/organismos acreditadores
 .testimonial.testimonial-default .testimonial-writer-name{
     color: #777;
 }
+
+.orgBoxText{
+  height: 300px;
+  background-color: ecf0f1;
+  color: rgba(0, 0, 0, .6);
+  
+}
+
+.orgBoxImg{
+  height: 300px;
+}
+
+.orgBoxImg .imgBox{
+  width: 200px;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.orgBoxText .hr1{
+  width: 20%;
+  border: 2px solid rgba(0, 0, 0, .6);
+  margin-left: 10px;
+}
+.orgBoxText .hr2{
+  margin-top: -10px;
+  width: 10%;
+  border: 2px solid rgba(0, 0, 0, .6);
+  margin-left: 40px;
+}
+
+
+
+
 /*-----estadistica----*/
 .bodylike {
   position: fixed;
@@ -1339,4 +1372,96 @@ Acreditacion/organismos acreditadores
   font-size: 30px;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.7);
+}
+
+
+/*
+============================
+============================
+SISTEMA INDICADORES DE PROCEDIMIENTOS
+============================
+============================
+*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+
+#backgroundVideo,
+.bodySistema #backgroundVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+.mainSistema,
+.bodySistema .mainSistema {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.bodySistema .mainSistema #contentSistema {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 24px;
+  height: 100%;
+  text-align: center;
+}
+.titleSistemaIndicadores{
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 8rem;
+  text-transform: uppercase;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 900px) {
+  .titleSistemaIndicadores{
+    font-size: 4rem;
+  }
+}
+
+.subTextSistemaIndicadores{
+    color: #E6DBAE;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 0;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 900px) {
+  .subTextSistemaIndicadores{
+    font-size: 0.9rem;
+  }
+}
+.mainSistema{
+  padding-top: 20%!important;
+}
+@media screen and (max-width: 900px) {
+  .mainSistema{
+    padding-top: 60%!important;
+  }
 }
