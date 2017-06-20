@@ -200,13 +200,16 @@
     <div class="">
     <div ng-view=""></div>
     </div>
-
+    
     <div class="footer footerUes">
       <div class="container">
         <p class="footerText"><span class="glyphicon glyphicon-education pull-left"></span>Universidad Estatal de Sonora<span class="glyphicon glyphicon-education pull-right"></span></p>
       </div>
     </div>
-
+    <div id="container">
+        <canvas id="canvas"></canvas>
+    </div>
+    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -235,6 +238,8 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="scripts/estadistica/TweenMax.min.js"></script>
+    <script type="text/javascript" src="scripts/estadistica/canvas.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
